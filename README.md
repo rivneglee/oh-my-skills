@@ -2,6 +2,8 @@
 
 Oh My Skills is a cross-agent skill library for coding assistants. It keeps reusable workflows in one neutral `skills/` catalog and exposes thin adapters for Claude Code, Codex, Cursor, GitHub Copilot, and other agents that can read markdown instructions.
 
+Repository: https://github.com/rivneglee/oh-my-skills
+
 ## Repository Model
 
 - `skills/` is the source of truth. Each skill lives in its own folder with a required `SKILL.md`.
@@ -19,6 +21,13 @@ Oh My Skills is a cross-agent skill library for coding assistants. It keeps reus
 - `systematic-debugging` keeps debugging evidence-driven.
 
 ## Quick Start
+
+Clone the repo:
+
+```bash
+git clone https://github.com/rivneglee/oh-my-skills.git
+cd oh-my-skills
+```
 
 Run the structure checks:
 

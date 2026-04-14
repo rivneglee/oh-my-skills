@@ -2,6 +2,7 @@ import { existsSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const root = new URL("..", import.meta.url).pathname;
+const repositoryUrl = "https://github.com/rivneglee/oh-my-skills";
 
 const requiredFiles = [
   "README.md",
@@ -93,8 +94,29 @@ for (const skillName of skillNames) {
 const filesToScan = requiredFiles.filter((file) => existsSync(join(root, file)));
 for (const file of filesToScan) {
   const content = readFileSync(join(root, file), "utf8");
-  if (/\b(TBD|TODO|FIXME|lorem ipsum)\b/i.test(content)) {
+  if (/\b(TBD|TODO|FIXME|lorem ipsum)\b|your-org/i.test(content)) {
     failures.push(`${file} contains placeholder text`);
+  }
+}
+
+const repositoryFiles = [
+  "README.md",
+  "package.json",
+  ".claude-plugin/plugin.json",
+  ".cursor-plugin/plugin.json",
+  ".codex/INSTALL.md",
+  ".copilot/INSTALL.md",
+];
+
+for (const file of repositoryFiles) {
+  const fullPath = join(root, file);
+  if (!existsSync(fullPath)) {
+    continue;
+  }
+
+  const content = readFileSync(fullPath, "utf8");
+  if (!content.includes(repositoryUrl)) {
+    failures.push(`${file} missing repository URL ${repositoryUrl}`);
   }
 }
 

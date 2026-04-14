@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "Cross-agent skill library for coding assistants",
   "type": "module",
+  "homepage": "https://github.com/rivneglee/oh-my-skills",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rivneglee/oh-my-skills.git"
+  },
   "scripts": {
     "test": "node tests/validate-structure.mjs && node scripts/validate-skills.mjs",
     "validate": "npm test",
