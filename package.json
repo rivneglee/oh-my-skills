@@ -1,0 +1,20 @@
+{
+  "name": "oh-my-skills",
+  "version": "0.1.0",
+  "description": "Cross-agent skill library for coding assistants",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/validate-structure.mjs && node scripts/validate-skills.mjs",
+    "validate": "npm test",
+    "new-skill": "node scripts/new-skill.mjs"
+  },
+  "keywords": [
+    "skills",
+    "agents",
+    "claude-code",
+    "codex",
+    "cursor",
+    "copilot"
+  ],
+  "license": "UNLICENSED"
+}

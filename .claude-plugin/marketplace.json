@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    {
+      "name": "oh-my-skills",
+      "source": ".",
+      "description": "Cross-agent skill library for coding assistants"
+    }
+  ]
+}

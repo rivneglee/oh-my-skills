@@ -1,0 +1,6 @@
+---
+description: Use the Oh My Skills library when planning, documenting, reviewing, or debugging code.
+alwaysApply: true
+---
+
+Before acting, inspect the repository `skills/` directory for a relevant skill. If one applies, read its `SKILL.md` and follow it unless the user gives a conflicting instruction.
