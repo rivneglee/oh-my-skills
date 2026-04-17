@@ -1,6 +1,6 @@
 # Oh My Skills
 
-Oh My Skills is a cross-agent skill library for coding assistants. It keeps reusable workflows in one neutral `skills/` catalog and exposes thin adapters for Claude Code, Codex, Cursor, GitHub Copilot, and other agents that can read markdown instructions.
+Oh My Skills is a cross-agent skill library for coding assistants. It currently focuses on one core workflow: validating logs and command output before agents make claims or decisions.
 
 Repository: https://github.com/rivneglee/oh-my-skills
 
@@ -12,13 +12,10 @@ Repository: https://github.com/rivneglee/oh-my-skills
 - `scripts/` contains small maintenance tools for creating and validating skills.
 - `tests/` contains repository checks that keep the scaffold coherent.
 
-## Starter Skills
+## Current Skill Focus
 
 - `using-oh-my-skills` teaches agents to inspect the library before acting.
-- `writing-docs` guides documentation work.
-- `code-review` provides a review-first workflow.
-- `planning` helps agents turn ideas into implementation plans.
-- `systematic-debugging` keeps debugging evidence-driven.
+- `log-validation` validates logs, traces, command output, CI output, and incident evidence.
 
 ## Quick Start
 
@@ -35,7 +32,7 @@ Run the structure checks:
 npm test
 ```
 
-Create a new skill:
+Create another skill later:
 
 ```bash
 npm run new-skill -- api-migration

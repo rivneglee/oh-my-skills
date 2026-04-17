@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build the initial cross-agent skill repository scaffold.
+**Goal:** Build the initial cross-agent skill repository scaffold focused on the `log-validation` skill.
 
-**Architecture:** Keep `skills/` as the canonical catalog and use thin platform adapter files for Claude Code, Codex, Cursor, and GitHub Copilot. Use dependency-free Node scripts for validation and skill generation.
+**Architecture:** Keep `skills/` as the canonical catalog and use thin platform adapter files for Claude Code, Codex, Cursor, and GitHub Copilot. Start with `log-validation` as the first focused domain skill and use dependency-free Node scripts for validation and skill generation.
 
 **Tech Stack:** Markdown, JSON, Node.js built-in modules.
 
@@ -17,7 +17,7 @@
 
 - [x] **Step 1: Write the failing validation script**
 
-Create a Node script that asserts required directories, adapter files, starter skills, and docs exist.
+Create a Node script that asserts required directories, adapter files, the focused starter skill, and docs exist.
 
 - [x] **Step 2: Run validation to verify it fails**
 
@@ -31,7 +31,7 @@ Expected: failure listing missing scaffold files.
 
 - [x] **Step 1: Add scaffold files**
 
-Create the platform-neutral skill catalog plus thin adapter files.
+Create the platform-neutral `log-validation` skill catalog plus thin adapter files.
 
 - [ ] **Step 2: Run validation to verify it passes**
 

@@ -1,6 +1,6 @@
 ---
 name: using-oh-my-skills
-description: Use at the start of work in repositories that include Oh My Skills, before planning, documenting, reviewing, debugging, or implementing.
+description: Use at the start of work in repositories that include Oh My Skills, especially before validating logs, traces, command output, CI output, or incident evidence.
 ---
 
 # Using Oh My Skills
@@ -17,7 +17,5 @@ Before acting, inspect available skills and choose the most relevant workflow.
 
 ## Selection Rules
 
-- Documentation work should use `writing-docs`.
-- Review requests should use `code-review`.
-- Planning or decomposition requests should use `planning`.
-- Bugs, failures, and unexplained behavior should use `systematic-debugging`.
+- Log, trace, command output, CI output, and incident evidence work should use `log-validation`.
+- If no focused skill applies, continue with normal engineering judgment and avoid inventing unavailable workflows.

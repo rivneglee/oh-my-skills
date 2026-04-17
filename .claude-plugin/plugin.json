@@ -1,7 +1,7 @@
 {
   "name": "oh-my-skills",
   "displayName": "Oh My Skills",
-  "description": "Cross-agent skills for documentation, review, planning, debugging, and software delivery workflows",
+  "description": "Cross-agent skill library focused on log, trace, command output, CI output, and incident evidence validation",
   "version": "0.1.0",
   "author": {
     "name": "Oh My Skills Maintainers"
@@ -11,10 +11,10 @@
   "license": "UNLICENSED",
   "keywords": [
     "skills",
-    "documentation",
-    "code-review",
-    "planning",
-    "debugging"
+    "log-validation",
+    "logs",
+    "evidence",
+    "ci"
   ],
   "skills": "./skills/",
   "agents": "./agents/",

@@ -10,7 +10,7 @@ The `skills/` directory is the source of truth. Each skill is platform-neutral a
 
 ## Initial Scope
 
-The scaffold includes starter skills for using the library, writing docs, reviewing code, planning work, and debugging. It also includes documentation, validation scripts, and placeholder-free adapter metadata.
+The scaffold initially focuses on `log-validation` as the first domain skill. It also includes the `using-oh-my-skills` bootstrap skill, documentation, validation scripts, and placeholder-free adapter metadata.
 
 ## Validation
 

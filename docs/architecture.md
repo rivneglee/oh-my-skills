@@ -1,10 +1,10 @@
 # Architecture
 
-Oh My Skills separates reusable agent behavior from platform-specific loading.
+Oh My Skills separates reusable agent behavior from platform-specific loading. The first focused behavior is log validation.
 
 ## Source Of Truth
 
-`skills/` is canonical. A skill must be understandable without knowing which agent loaded it. Platform-specific details belong in adapter folders, not in the skill body.
+`skills/` is canonical. A skill must be understandable without knowing which agent loaded it. Platform-specific details belong in adapter folders, not in the skill body. The current domain skill is `log-validation`.
 
 ## Adapter Folders
 
@@ -15,7 +15,7 @@ Oh My Skills separates reusable agent behavior from platform-specific loading.
 
 ## Supporting Areas
 
-- `agents/` can hold reusable reviewer or worker prompts.
+- `agents/` can hold reusable prompts for platforms that support agent roles.
 - `commands/` can hold command-style workflows.
 - `hooks/` can hold lifecycle hook definitions for platforms that support hooks.
 - `scripts/` holds deterministic maintenance tools.

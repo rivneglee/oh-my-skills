@@ -24,13 +24,17 @@ const requiredFiles = [
   "docs/superpowers/specs/2026-04-14-cross-agent-skill-repo-design.md",
   "docs/superpowers/plans/2026-04-14-cross-agent-skill-repo.md",
   "skills/using-oh-my-skills/SKILL.md",
+  "skills/log-validation/SKILL.md",
+  "skills/_template/SKILL.md",
+  "scripts/new-skill.mjs",
+  "scripts/validate-skills.mjs",
+];
+
+const removedFiles = [
   "skills/writing-docs/SKILL.md",
   "skills/code-review/SKILL.md",
   "skills/planning/SKILL.md",
   "skills/systematic-debugging/SKILL.md",
-  "skills/_template/SKILL.md",
-  "scripts/new-skill.mjs",
-  "scripts/validate-skills.mjs",
 ];
 
 const requiredDirs = [
@@ -61,12 +65,16 @@ for (const file of requiredFiles) {
   }
 }
 
+for (const file of removedFiles) {
+  const fullPath = join(root, file);
+  if (existsSync(fullPath)) {
+    failures.push(`removed starter skill still exists: ${file}`);
+  }
+}
+
 const skillNames = [
   "using-oh-my-skills",
-  "writing-docs",
-  "code-review",
-  "planning",
-  "systematic-debugging",
+  "log-validation",
 ];
 
 for (const skillName of skillNames) {
