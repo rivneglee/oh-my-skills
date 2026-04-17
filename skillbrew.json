@@ -1,0 +1,12 @@
+{
+  "name": "skillbrew-project",
+  "exports": {
+    "skills": "skills",
+    "agents": "agents",
+    "rules": "rules"
+  },
+  "dependencies": {
+    "test-skill": "git@github.com:rivneglee/test-skill.git"
+  },
+  "version": "0.1.0"
+}
