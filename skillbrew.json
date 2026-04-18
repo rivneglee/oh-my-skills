@@ -1,5 +1,5 @@
 {
-  "name": "skillbrew-project",
+  "name": "oh-my-skills",
   "exports": {
     "skills": "skills",
     "agents": "agents",
