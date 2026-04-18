@@ -25,6 +25,8 @@ Validate logs as evidence before drawing conclusions.
 - Prefer fresh logs from the failing or target path over stale or unrelated output.
 
 ## Output Format
+Diagram
+
 
 Use this order:
 
